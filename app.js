@@ -9,10 +9,6 @@ const https = require('https')
 const app = express();
 const port = process.env.PORT||3000 
 
-
-
-
-
 app.use(express.static("public"))
 app.use(bodyParser.urlencoded({extended:true}))
 
@@ -47,7 +43,7 @@ app.post('/',function(req,res){
   
    const options = {
     method:"POST",
-    auth :"akash50:dca7f05eb42e29874832b2869de985387-us12"
+    auth :"akash50:ca7f05eb42e29874832b2869de985387-us12"
    }
 
    const apiRequest = https.request(url,options,function(response){
