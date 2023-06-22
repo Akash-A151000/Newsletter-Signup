@@ -3,8 +3,9 @@ const request = require('request')
 
 const bodyParser = require("body-parser")
 const https = require('https')
+require('dotenv').config()
 
-
+console.log(process.env)
 
 const app = express();
 const port = process.env.PORT||3000 
@@ -43,7 +44,7 @@ app.post('/',function(req,res){
   
    const options = {
     method:"POST",
-    auth :"akash50:360aae38d6cf9cc7b1bb8f2b6911f50b-us12"
+    auth :"akash50:"+process.env.API_KEY
    }
 
    const apiRequest = https.request(url,options,function(response){
@@ -75,7 +76,7 @@ app.post('/failure',function(req,res){
 
 
 //apiKey2
-//360aae38d6cf9cc7b1bb8f2b6911f50b-us12
+//974714a95139bce98efc79b31af433b6-us12
 
 // audience Id
 // 8f035f1c5a
