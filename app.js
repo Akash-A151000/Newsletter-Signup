@@ -75,11 +75,3 @@ app.post('/failure',function(req,res){
 
 
 
-//apiKey2
-//974714a95139bce98efc79b31af433b6-us12
-
-// audience Id
-// 8f035f1c5a
-
-//marketing permissions
-//d51b3ffc39
